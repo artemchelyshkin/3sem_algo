@@ -6,9 +6,9 @@
 #include <cstdint>
 #include <vector>
 
-int64_t p = 1000000007;
+int64_t p = 1000000007; // const
 
-std::vector<uint64_t> primes;
+std::vector<uint64_t> primes; // глобально лучше определять только константы
 std::vector<uint64_t> mind;
 
 void sieve(uint64_t n) {
